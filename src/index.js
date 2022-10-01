@@ -20,9 +20,11 @@ app.engine(
         extname: '.hbs',
     }),
 );
-          app.set('view engine',
-          
-          'hbs');
+app.set(
+    'view engine',
+
+    'hbs',
+);
 
 console.log(__dirname);
 console.log('PATH: ', path.join(__dirname, 'views'));
@@ -37,6 +39,5 @@ route(app);
             app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
-
 
 // "beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write \"src/**/*.{js,json,scss}\"",
