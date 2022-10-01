@@ -27,11 +27,11 @@
   },
   "homepage": "https://github.com/tamthanhcao/nodejs_blog#readme",
   "lint-staged": {
-    "*": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"[Husky] pre-commit\""
+      "pre-commit": "lint-staged"
     }
   },
   "dependencies": {
